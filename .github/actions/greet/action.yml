@@ -10,6 +10,7 @@ inputs:
 runs:
   using: composite
   steps:
+  - uses: actions/checkout@v6
   - run: "Hello, $INPUTS_USERNAME, welcome to Actions !"
     shell: bash
     
