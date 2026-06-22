@@ -1,0 +1,15 @@
+name: "greetings"
+description: "Greet users"
+
+inputs:
+ username: 
+   default: Mahendra
+   description: "Name of User"
+   required: true
+
+runs:
+  using: composite
+  steps:
+  - run: "Hello, $INPUTS_USERNAME, welcome to Actions !"
+    shell: bash
+    
