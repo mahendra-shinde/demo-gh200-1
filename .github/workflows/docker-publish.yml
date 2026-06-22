@@ -32,7 +32,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - uses: ./actions/greet
+      - uses: ./.github/actions/greet
         with:
           username: Mahendra
       # Install the cosign tool except on PR
